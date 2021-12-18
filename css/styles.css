@@ -216,9 +216,10 @@ font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-left: auto;
+ /* flex-direction: row;*/
+  align-items: center;
+  margin: left;
+  /*margin-left: auto;*/
 }
 
 .telephone-maill-header .button {
@@ -226,8 +227,7 @@ font-size: 14px;
   text-decoration: none;
   
 }
-.telephone-maill-header{ display:flex;
-  margin: auto ;
+.telephone-maill-header{
 }
 
 .telephone-maill-header :not(:last-child){margin-right: 50px;}
@@ -274,6 +274,14 @@ color: #757575;
 /*font-weight: 500;*/
 padding-top: 24px;
 padding-bottom: 25px;}
+
+.container-flex{
+ display: block;
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
 
 /* ============== END NAVIGATION ============== */
 
@@ -414,7 +422,8 @@ justify-content: center;
 .employees {
   background-color: var(--special-background-color);
   text-align: center;
-  background: #E5E5E5;
+  background: #F5F4FA;
+;
 }
 .background-partners{ background: #fff;
 
@@ -614,13 +623,50 @@ h2 {
   --color1: black;
   background-color: #2196F3;
   --color2: #fff;
+   width: 44px;
+  height: 44px;
+}
+/***********************************************/
+
+.social-block2 {
+  display: flex;
+  /*display: block;*/
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+   --color2:  #AFB1B8;
+;
+}
+.social-block2:focus {
+  
+  background-color: #2196F3;
+  --color2: #fff;
+}
+.social-block2:hover {
+  
+  background-color: #2196F3;
+  --color2: #fff;
 }
 
+.social-links2 {
+  display: flex;
+    margin: auto;
+  
+  width: 20px;
+  height: 20px;
+  --color1: none;
+}
+
+
+/*
 .social-links2 {
   width: 44px;
   height: 44px;
   --color1: none;
-}
+  margin-right: 10px;
+  
+}***************************************************************************************/
 /*
 .social-links2:hover {
   --color1: #2196F3;
@@ -683,9 +729,12 @@ h2 {
   display: flex;
   /*display: block;*/
 background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+border-radius: 50%;
+
   margin-right: 10px;
-   --color2: #fff;
+   fill: #fff;
 }
 .social-block3:focus {
   
@@ -699,8 +748,11 @@ background: rgba(255, 255, 255, 0.1);
 }
 
 .social-links3 {
-  width: 44px;
-  height: 44px;
+  /**/display: flex;
+    margin: auto;
+  
+  width: 20px;
+  height: 20px;
   --color1: none;
 }
 
@@ -952,7 +1004,7 @@ color: #FFFFFF;
 .social-centr{
 display: flex;
 justify-content: center;
-padding-top: 16px;
+margin-top: 16px;
 }
 
 .client-icon{
@@ -964,3 +1016,7 @@ padding-top: 16px;
 background-color: #2196F3;
 border: dashed red;
 }
+
+
+
+/*********************/
