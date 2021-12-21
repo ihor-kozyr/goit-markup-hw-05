@@ -562,6 +562,75 @@ h2 {
   margin: 0;
 }
 
+
+.project-text{
+transform: translateY(0%);
+
+opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+ 
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+ width:370px;
+height: 294px;
+padding: 64px;
+padding-left: 24px;
+padding-right: 24px;
+
+letter-spacing: 0.03em;
+
+color:rgba(33, 150, 243, 1);
+
+pointer-events: none;
+}
+
+.projects-item:hover .project-text{
+  transform: translateY(-100%);
+  opacity: 1;
+  width:370px;
+height: 294px;
+padding: 64px;
+padding-left: 24px;
+padding-right: 24px;
+background: rgba(33, 150, 243, 0.9);
+color: #FFFFFF;
+}
+
+/*
+.project-text::before{
+  display: inline-block;
+  content: " ";
+
+  transform: translateY(10%);
+  width:370px;
+height: 294px;
+padding: 64px;
+padding-left: 24px;
+padding-right: 24px;
+background: rgba(33, 150, 243, 0.9);
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+
+visibility: hidden;
+
+letter-spacing: 0.03em;
+content: #fff;
+}*/
+.project-text{
+  position: absolute;}
+
 /* ============== END PORTFOLIO PROJECTS ============== */
 
 /* ============== FOOTER ============== */
