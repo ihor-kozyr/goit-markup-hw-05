@@ -14,9 +14,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
+
+
+
+
+
+
     <!-- Шапка сайта -->
     <header class="page-header">
 
@@ -69,18 +76,11 @@
 
         </section>
 
-        <!--Модальне вікно-->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="modal-close" data-modal-close>
-                    <svg class="close-icon">
-                        <use href="./images/svg/close.png"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!---->
-        <script src="./js/modal.js"></script>
+
+
+
+
+
 
 
         <!-- Переваги -->
@@ -151,12 +151,15 @@
 
                     <li class="services-list-item">
                         <img src="./images/1th/layout.jpg" alt="Компьютер" width="370" />
+                        <p class="services-text">Десктопные приложения</p>
                     </li>
                     <li class="services-list-item">
                         <img src="./images/1th/mobile_development.jpg" alt="Телефон" width="370" />
+                        <p class="services-text">Мобильные приложения</p>
                     </li>
                     <li class="services-list-item">
                         <img src="./images/1th/design.jpg" alt="Планшет" width="370" />
+                        <p class="services-text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -385,7 +388,7 @@
         </section>
 
 
-
+        <div class="backdrop"></div>
 
 
     </main>
@@ -451,6 +454,21 @@
 
 
     </footer>
+
+    <!--Модальне вікно-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close" data-modal-close>
+                <svg class="close-icon">
+                    <use href="./images/svg/close.png"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!---->
+    <script src="./js/modal.js"></script>
+
+
 
 </body>
 
