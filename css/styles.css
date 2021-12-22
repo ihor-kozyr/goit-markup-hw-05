@@ -572,12 +572,15 @@ color: #FFFFFF;
   margin-left: -30px;
   margin-top: -30px;
 
+
   padding-bottom: 94px;
 }
 .projects-box-shadow:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.card{position: relative;
+    overflow: hidden;}
 
 .projects-item {
   margin-left: 30px;
@@ -602,9 +605,11 @@ transform: translateY(0%);
 
 opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 
+/*
 
+*/
 
  
 font-family: Roboto;
@@ -612,7 +617,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 28px;
-/* or 156% */
+
 
  width:370px;
 height: 294px;
@@ -632,6 +637,8 @@ pointer-events: none;
   opacity: 1;
   width:370px;
 height: 294px;
+
+
 padding: 64px;
 padding-left: 24px;
 padding-right: 24px;
@@ -639,33 +646,10 @@ background: rgba(33, 150, 243, 0.9);
 color: #FFFFFF;
 }
 
-/*
-.project-text::before{
-  display: inline-block;
-  content: " ";
 
-  transform: translateY(10%);
-  width:370px;
-height: 294px;
-padding: 64px;
-padding-left: 24px;
-padding-right: 24px;
-background: rgba(33, 150, 243, 0.9);
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 28px;
-
-visibility: hidden;
-
-letter-spacing: 0.03em;
-content: #fff;
-}*/
 .project-text{
   position: absolute;}
-  /*.projects-box-shadow:hover .project-text::before{
-    opacity: 1;}*/
+
 
 
 /* ============== END PORTFOLIO PROJECTS ============== */
